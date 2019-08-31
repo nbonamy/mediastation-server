@@ -21,9 +21,12 @@ make
 ```
 Lib can be found in `./lib/.libs/libcurl.a`.
 
-### jpeglib (9c)
+### jpeglib
 ```
 ./configure --disable-shared --enable-static
+```
+Edit the `Makefile` to add `$(TROBJECTS)` to `libjpeg.a` and `libjpeg.la` rules (as dependencies and sources).
+```
 make
 ```
 Lib can be found in `./.libs/libjpeg.a`.
