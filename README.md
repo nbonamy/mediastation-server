@@ -104,3 +104,13 @@ python scons.py platform=linux-gcc
 ```
 Lib can be found in `./libs/linux-gcc-4.2.1/libjson_linux-gcc-4.2.1_libmt.a`.
 
+### ffmpeg
+```
+./configure
+make lib
+```
+Libs can be found in:
+  - `./libavformat/libavformat.a` 
+  - `./libavcodec/libavcodec.a`
+  - `./libavutil/libavutil.a`
+
