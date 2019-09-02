@@ -106,6 +106,10 @@ Lib can be found in `./libs/linux-gcc-4.2.1/libjson_linux-gcc-4.2.1_libmt.a`.
 
 ### ffmpeg
 
+#### Links
+
+http://blog.julien.org/2013/08/howto-compiling-ffmpeg-x264-mp3-aac.html
+
 #### Prerequisites
 ```
 sudo apt-get install libmp3lame-dev libtheora-dev libva-dev libvdpau-dev libvorbis-dev libgsm1-dev zlib1g-dev
