@@ -105,12 +105,38 @@ python scons.py platform=linux-gcc
 Lib can be found in `./libs/linux-gcc-4.2.1/libjson_linux-gcc-4.2.1_libmt.a`.
 
 ### ffmpeg
+
+#### Prerequisites
 ```
-./configure
-make lib
+sudo apt-get install libmp3lame-dev libtheora-dev libva-dev libvdpau-dev libvorbis-dev libgsm1-dev zlib1g-dev
 ```
-Libs can be found in:
-  - `./libavformat/libavformat.a` 
-  - `./libavcodec/libavcodec.a`
-  - `./libavutil/libavutil.a`
+
+#### Xvid
+```
+wget http://downloads.xvid.org/downloads/xvidcore-1.3.3.tar.gz
+tar xzvf xvidcore-1.3.3.tar.gz
+cd xvidcore/build/generic
+./configure --prefix=/usr/local
+make
+sudo make install
+```
+
+#### x264
+```
+git clone git://git.videolan.org/x264.git
+cd x264
+./configure --prefix=/usr/local --enable-static --disable-opencl
+make
+sudo make install
+```
+
+#### ffmpeg
+```
+./configure --extra-ldflags="-L/usr/local/lib -L/usr/lib/x86_64-linux-gnu" --enable-gpl --disable-static --enable-shared --disable-programs --disable-encoders --disable-filters --disable-muxers --disable-bsfs --disable-protocols --disable-devices --disable-doc --disable-avdevice --disable-swresample --disable-avresample --disable-swscale --disable-postproc --disable-avfilter --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libxvid --enable-libx264
+```
+Libs can be found in (remove number when copying):
+  - `./libavformat/libavformat.so.58` 
+  - `./libavcodec/libavcodec.a.58`
+  - `./libavutil/libavutil.a.56`
+  
 
