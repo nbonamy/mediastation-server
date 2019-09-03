@@ -108,7 +108,9 @@ Lib can be found in `./libs/linux-gcc-4.2.1/libjson_linux-gcc-4.2.1_libmt.a`.
 
 #### Links
 
+https://github.com/zimbatm/ffmpeg-static
 http://blog.julien.org/2013/08/howto-compiling-ffmpeg-x264-mp3-aac.html
+https://johnvansickle.com/ffmpeg/
 
 #### Prerequisites
 ```
