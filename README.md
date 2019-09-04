@@ -114,7 +114,7 @@ https://johnvansickle.com/ffmpeg/
 
 #### Prerequisites
 ```
-sudo apt-get install libmp3lame-dev libtheora-dev libva-dev libvdpau-dev libvorbis-dev libgsm1-dev zlib1g-dev
+sudo apt-get install pkg-config libmp3lame-dev libtheora-dev libva-dev libvdpau-dev libvorbis-dev libgsm1-dev zlib1g-dev
 ```
 
 #### Xvid
