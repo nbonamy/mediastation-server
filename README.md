@@ -6,6 +6,11 @@
 
 On MacOS 10.9+ it is necessary to install https://docs.brew.sh/C++-Standard-Libraries.
 
+On Linux
+```
+sudo apt-get install pkg-config cmake zlib1g-dev
+```
+
 ### zlib
 ```
 make
@@ -114,7 +119,7 @@ https://johnvansickle.com/ffmpeg/
 
 #### Prerequisites
 ```
-sudo apt-get install pkg-config libmp3lame-dev libtheora-dev libva-dev libvdpau-dev libvorbis-dev libgsm1-dev zlib1g-dev
+sudo apt-get install libmp3lame-dev libtheora-dev libvorbis-dev
 ```
 
 #### Xvid
